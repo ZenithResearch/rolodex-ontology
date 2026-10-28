@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "zn": "https://zenith-research.ca/ontology/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "rdfs:label",
+    "comment": "rdfs:comment",
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id"
+    },
+    "versionIRI": {
+      "@id": "owl:versionIRI",
+      "@type": "@id"
+    },
+    "versionInfo": "owl:versionInfo",
+    "runtimeLabel": {
+      "@id": "zn:runtimeLabel",
+      "@type": "xsd:boolean"
+    },
+    "canonicalAuthority": {
+      "@id": "zn:canonicalAuthority",
+      "@type": "@id"
+    },
+    "semanticOperation": {
+      "@id": "zn:semanticOperation",
+      "@type": "@id"
+    },
+    "equivalentClass": {
+      "@id": "owl:equivalentClass",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "urn:zenith:ontology-review:rolodex:0.1.0",
+      "@type": "owl:Ontology",
+      "label": "Rolodex directory ontology \u2014 split review",
+      "versionInfo": "0.1.0-review.1",
+      "comment": "Directory core extracted without changing existing term IRIs or source axioms. Source repository split; not a runtime migration or replacement for pinned Devgraph releases."
+    },
+    {
+      "@id": "zn:Entity",
+      "@type": "owl:Class",
+      "label": "Entity",
+      "comment": "Common directory and provenance identity for a person, agent, organization, or other named participant in work; not an authentication Subject or credential.",
+      "runtimeLabel": false
+    },
+    {
+      "@id": "zn:Person",
+      "@type": "owl:Class",
+      "label": "Person",
+      "comment": "Human entity.",
+      "subClassOf": "zn:Entity",
+      "runtimeLabel": false
+    },
+    {
+      "@id": "zn:Agent",
+      "@type": "owl:Class",
+      "label": "Agent",
+      "comment": "Software, AI, service, or other automated entity.",
+      "subClassOf": "zn:Entity",
+      "runtimeLabel": false
+    },
+    {
+      "@id": "zn:Organization",
+      "@type": "owl:Class",
+      "label": "Organization",
+      "comment": "Collective entity such as a company, project, institution, or working group.",
+      "subClassOf": "zn:Entity",
+      "runtimeLabel": false
+    },
+    {
+      "@id": "zn:MEMBER_OF",
+      "@type": "owl:ObjectProperty",
+      "label": "member of",
+      "comment": "Directory membership that does not grant authority."
+    },
+    {
+      "@id": "zn:OPERATED_BY",
+      "@type": "owl:ObjectProperty",
+      "label": "operated by",
+      "comment": "Operational responsibility for an Agent, including an Agent delegation chain; not credential delegation."
+    },
+    {
+      "@id": "zn:Actor",
+      "@type": "owl:Class",
+      "label": "Actor",
+      "comment": "Directory class name published in v0.4.0, equivalent to Entity. Entity is preferred in v0.5.0; this identifier remains readable and does not denote an authentication Subject or credential.",
+      "equivalentClass": "zn:Entity",
+      "runtimeLabel": false
+    }
+  ]
+}

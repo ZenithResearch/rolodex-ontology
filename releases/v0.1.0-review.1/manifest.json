@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "zenith.ontology-source-bundle.v1",
+  "bundleDigestAlgorithm": "sha256-file-list-v1",
+  "bundleDigest": "dfd77fca045a5df17ee876370f5deeff70837d061f7a9b0a6e1645d469facec5",
+  "files": [
+    {
+      "path": "releases/v0.1.0-review.1/ontology/boundaries.json",
+      "sha256": "aaef81838859ea8bda3d607056301d6d741f3281a4234343521a984e7a134562",
+      "bytes": 982
+    },
+    {
+      "path": "releases/v0.1.0-review.1/ontology/context.jsonld",
+      "sha256": "bcb4c213b415cc4058361d7c6dbf28b90cb40a39d53ebefe506990c8dca91d6c",
+      "bytes": 1045
+    },
+    {
+      "path": "releases/v0.1.0-review.1/ontology/ontology.jsonld",
+      "sha256": "d9ae5089f86b6480adbb202187b0a04cbc8c70286a56063c14292df9f028f2b6",
+      "bytes": 3205
+    }
+  ],
+  "status": "review",
+  "version": "0.1.0-review.1",
+  "ontologyId": "urn:zenith:ontology-review:rolodex:0.1.0",
+  "semanticAcceptance": "not-asserted",
+  "pathBase": "repository-root"
+}

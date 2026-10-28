@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "rolodex.source-boundary.v1",
+  "status": "source-split-review",
+  "ownedTerms": [
+    "zn:Entity",
+    "zn:Actor",
+    "zn:Person",
+    "zn:Agent",
+    "zn:Organization",
+    "zn:MEMBER_OF",
+    "zn:OPERATED_BY"
+  ],
+  "integrationTermsRetainedInDevgraph": [
+    "zn:ASSIGNED_TO",
+    "zn:OWNED_BY",
+    "zn:ATTRIBUTED_TO",
+    "zn:HAS_EXTERNAL_LINK"
+  ],
+  "identityPolicy": "Preserve https://zenith-research.ca/ontology/terms/ identifiers; Entity preferred, Actor remains its declared equivalent compatibility name.",
+  "runtimeAdmission": false,
+  "authorityTransfer": false,
+  "excluded": [
+    "Work classes and workflows",
+    "wallet/private contact instances",
+    "authentication subjects and credentials",
+    "app-server implementation",
+    "unreviewed directory extensions"
+  ],
+  "upstream": {
+    "repository": "https://github.com/ZenithResearch/devgraph",
+    "commit": "009e91b4be47768dc65206e5bf69bf17afabc19a",
+    "release": "0.12.0"
+  }
+}

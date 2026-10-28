@@ -1,0 +1,3 @@
+# Ontology source repository
+
+Do not use the Sites skill or plugin. Preserve original source bytes, term IRIs, source maturity, exact import pins and versioned release snapshots. Repository/source acceptance does not grant runtime or credential authority. Never publish credentials, private customer/contact instances or local machine paths. Run npm test after source or discovery changes. No public website promotion, source package acceptance, namespace allocation or provider migration follows from a repository push. Existing accepted releases must stay readable; adopt changes through new versions and reviewed producer/consumer mappings.

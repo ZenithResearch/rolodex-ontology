@@ -1,0 +1,13 @@
+{
+  "name": "@zenith-research/rolodex-ontology",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node scripts/verify.mjs",
+    "verify": "node scripts/verify.mjs"
+  }
+}

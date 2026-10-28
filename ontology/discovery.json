@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "rolodex.ontology-discovery.v1",
+  "repository": "https://github.com/ZenithResearch/rolodex-ontology",
+  "branch": "main",
+  "ontologyId": "urn:zenith:ontology-review:rolodex:0.1.0",
+  "version": "0.1.0-review.1",
+  "status": "review",
+  "sourcePath": "ontology/ontology.jsonld",
+  "releaseManifest": "releases/v0.1.0-review.1/manifest.json",
+  "runtimeAdmission": false,
+  "authorityTransfer": false
+}
